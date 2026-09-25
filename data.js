@@ -6,7 +6,7 @@
    ========================================================== */
 window.PORTFOLIO = {
   profile: {
-    name: "Miguel",                     // TODO
+    name: "Miguel Figuerola Alonso",                     // TODO
     handle: "miguel",                    // TODO: se usa en el prompt (tunombre@portfolio)
     role: "Desarrollador Full Stack",    // TODO
     location: "Huelva, España",              // TODO
