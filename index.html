@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio — Terminal</title>
+  <meta name="description" content="Portafolio personal con estilo de consola retro." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="crt">
+    <main class="terminal" id="terminal">
+      <header class="titlebar">
+        <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="titlebar-text" id="titlebar-text">guest@portfolio: ~</span>
+        <span class="clock" id="clock" aria-hidden="true"></span>
+      </header>
+
+      <nav class="shortcuts" aria-label="Secciones">
+        <button type="button" data-cmd="about">[ sobre mí ]</button>
+        <button type="button" data-cmd="projects">[ proyectos ]</button>
+        <button type="button" data-cmd="experience">[ experiencia ]</button>
+        <button type="button" data-cmd="skills">[ habilidades ]</button>
+        <button type="button" data-cmd="courses">[ cursos ]</button>
+        <button type="button" data-cmd="contact">[ contacto ]</button>
+        <button type="button" data-cmd="help">[ help ]</button>
+        <button type="button" data-cmd="clear">[ clear ]</button>
+      </nav>
+
+      <section class="screen" id="screen">
+        <div id="output" aria-live="polite"></div>
+
+        <form class="prompt-line" id="prompt-form" autocomplete="off">
+          <label for="cmd-input" class="prompt" id="prompt-label">guest@portfolio:~$</label>
+          <div class="input-wrap">
+            <span class="typed" aria-hidden="true"><span id="typed-before"></span><span class="cursor" id="cursor">&nbsp;</span><span id="typed-after"></span></span>
+            <input id="cmd-input" type="text" spellcheck="false" autocapitalize="off" autocorrect="off" aria-label="Escribe un comando" />
+          </div>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
